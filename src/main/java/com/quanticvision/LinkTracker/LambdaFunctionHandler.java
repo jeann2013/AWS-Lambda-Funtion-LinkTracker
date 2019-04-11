@@ -89,7 +89,7 @@ public class LambdaFunctionHandler implements RequestStreamHandler {
 				if (debug) {
 					System.out.println("Parameter are null.");
 				}
-				url = "https://www.quantivision.com";
+				url = "http://www.jeancarlosn.com";
 			}
 
 			String sendQueueReturn = sendMessageToQueue(queueUrl, outboxid, linkId);
@@ -146,7 +146,7 @@ public class LambdaFunctionHandler implements RequestStreamHandler {
 		response.put("isBase64Encoded", "true");
 		response.put("statusCode", "200");
 		response.put("headers", header);
-		response.put("body","iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=");
+		response.put("body","iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAffC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=");
 
 		if (debug) {
 			System.out.println("API Response : " + JSONObject.toJSONString(response));
@@ -167,7 +167,7 @@ public class LambdaFunctionHandler implements RequestStreamHandler {
 		Map<String, Object> body = new HashMap<String, Object>();
 		
 		header.put("Cache-Control", "no-cache, no-store, must-revalidate");
-		header.put("Provided-By", "Quantic Vision, S.A.");
+		header.put("Provided-By", "Enterprice");
 		header.put("Location", url);
 		response.put("isBase64Encoded", "false");
 		response.put("statusCode", "301");
